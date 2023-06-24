@@ -1,0 +1,28 @@
+{
+  "name": "express-hello-world",
+  "version": "1.0.0",
+  "description": "Express Hello World",
+  "main": "server.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "bytenode server.jsc",
+    "build": "bytenode -c server.js && rm server.js"
+  },
+  "dependencies": {
+    "bytenode": "^1.4.1",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "request": "^2.88.2",
+    "basic-auth": "^2.0.1",
+    "https": "^1.0.0",
+    "pm2": "^5.3.0",
+    "cors": "^2.8.5"
+  },
+  
+  "engines": {
+    "node": ">=14"
+  }
+}
