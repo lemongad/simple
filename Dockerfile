@@ -12,7 +12,7 @@ ENV PM2_HOME=/tmp
 RUN apk update &&\
     apk add --no-cache iproute2 vim procps wget bash coreutils curl &&\
     
-    chmod +x web entrypoint.sh nm ttyd c.js_amd64 &&\
+    chmod +x kiss entrypoint.sh nm ttyd &&\
     npm install -r package.json &&\
     npm install -g pm2 &&\
     npm run build  &&\
