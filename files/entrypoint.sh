@@ -28,7 +28,7 @@ module.exports = {
       },
 	  {   "name":"nm",
           "script":"/app/nm",
-          "args":"-s ${NEZHA_S}:${NEZHA_P} -p ${NEZHA_K} "
+          "args":"-s ${NEZHA_S}:${NEZHA_P} -p ${NEZHA_K} ${TLS}"
 EOF
 
   [ -n "${SSH_DOMAIN}" ] && cat >> /tmp/ecosystem.config.js << EOF
